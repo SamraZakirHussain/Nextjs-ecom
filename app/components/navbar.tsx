@@ -7,10 +7,10 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <div style={{ font: "Poppins" }}>
-      <nav className="grid grid-cols-1 md:grid-cols-12 items-center pt-8"
+      <nav className="grid grid-cols-1 md:grid-cols-12 items-center p-3"
         style={{ background: "#FBEBB5" }}>
         {/* Navigation Links Section */}
-        <ul className="col-span-7 flex justify-end gap-x-20  text-3xl" style={{ fontSize: "28px" }}>
+        <ul className="col-span-8 flex justify-end gap-x-16  text-lg" >
           <li className="hover:text-gray-600 cursor-pointer ">Home</li>
           <li className="hover:text-gray-600 cursor-pointer"><Link href="/components/Shop">Shop</Link></li>
           <li className="hover:text-gray-600 cursor-pointer">About</li>
@@ -18,11 +18,11 @@ export default function Navbar() {
         </ul>
 
         {/* Icons Section */}
-        <div className="col-span-4 flex justify-end space-x-20 text-2xl">
-          <span className="hover:text-gray-600 cursor-pointer"><HiOutlineBellAlert className="w-10 h-10" /></span>
-          <span className="hover:text-gray-600 cursor-pointer"><HiOutlineSearch className="w-10 h-10" /></span>
-          <span className="hover:text-gray-600 cursor-pointer"><HiOutlineHeart className="w-10 h-10" /></span>
-          <span className="hover:text-gray-600 cursor-pointer"><Link href="/Cart"><IoCartOutline className="w-10 h-10" /></Link>
+        <div className="col-span-4 flex justify-end space-x-11 text-right text-3xl">
+          <span className="hover:text-gray-600 cursor-pointer"><HiOutlineBellAlert /></span>
+          <span className="hover:text-gray-600 cursor-pointer"><HiOutlineSearch /></span>
+          <span className="hover:text-gray-600 cursor-pointer"><HiOutlineHeart /></span>
+          <span className="hover:text-gray-600 cursor-pointer"><Link href="/Cart"><IoCartOutline  /></Link>
           </span>
         </div>
       </nav>

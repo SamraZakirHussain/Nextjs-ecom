@@ -205,3 +205,44 @@
 //                     >
 //                         Add To Cart
 //                     </button> */}
+
+
+
+//   {/* <!-- sofa 3 --> */}
+//    <div className="flex flex-col items-center mt-12" >
+//       <img src="/images/sofa3.png" alt="Side Table" style={{width:"400px", height:"400px"}}/>
+//       <h1 className="text-2xl font-normal text-left" style={{fontSize:"24px"}}>
+//         Trenton modular sofa_3
+//       <br />Rs. 25,000.00
+//         </h1>
+        
+//     </div> 
+//    {/* <!-- Table 2 --> */}
+//     <div className="flex flex-col items-center mt-12" >
+//       <img src="/images/table2.png" alt="Side Table" style={{width:"400px", height:"400px"}}/>
+//       <h1 className="text-2xl font-normal text-left" style={{fontSize:"24px"}}>
+//       Granite dining table with 
+//       <br/>dining chair
+//       <br />Rs. 25,000.00
+//         </h1>
+        
+//     </div>
+//     {/* <!-- Table 3 --> */}
+//    <div className="flex flex-col items-center mt-12" >
+//       <img src="/images/table3.png" alt="Side Table" style={{width:"400px", height:"400px"}}/>
+//       <h1 className="text-2xl font-normal text-cleft" style={{fontSize:"24px"}}>
+//       Outdoor bar table and
+//       <br/>stool
+//       <br />Rs. 25,000.00
+//         </h1>
+//     </div> 
+
+// {/* <!-- mirror --> */}
+// <div className="flex flex-col items-center mt-12" >
+      <img src="/images/mirror.png" alt="Side Table" style={{width:"400px", height:"400px"}}/>
+      <h1 className="text-2xl font-normal left" style={{fontSize:"24px"}}>
+      Plain console with teak
+        <br/>mirror
+      <br />Rs. 25,000.00
+        </h1>
+    </div>

@@ -6,22 +6,23 @@ import Furniture from "./components/prac-mainpg-items";
 import Shop from "./components/Shop/page";
 export default function Home(){
   return(
-    <div>
+    <div className="font-poppins ">
     <Navbar />
     <div
   className="grid grid-cols-1 md:grid-cols-12 "
   style={{ background: "#FBEBB5" }}>
-    <div className="md:col-span-1 flex flex-col"></div>
+    {/* <div className="md:col-span-1 flex flex-col"></div> */}
   {/* Left Section: Text */}
-  <div className="md:col-span-3 flex flex-col justify-center">
-    <div>
-    <h1 className=" font-poppins md:text-8xl font-semibold mb-7" style={{fontSize:"64px"}} >
+  <div className="md:col-span-4 flex flex-col justify-center">
+    <div className=" md:text-6xl font-semibold ml-6 pl-8 ">
+    <div className=" "  >
       Rocket single 
-    </h1>
-    <h1 className="text-left font-poppins md:text-7xl font-semibold mb-10" style={{fontSize:"64px"}}> 
-      seater
-    </h1>
-    <button className="text-left font-semibold border-b border-black " style={{fontSize:"34px"}}>
+    
+    </div>
+    <div className=" md:text-6xl font-semibold mb-10 "> 
+    seater
+    </div>
+    <button className="md:text-4xl font-semibold border-b border-black " >
       Shop Now
     </button>
     </div>
@@ -29,91 +30,57 @@ export default function Home(){
   </div>
 
   {/* Right Section: Image */}
-  <div className="md:col-span-8 flex justify-end">
-    <img
+  <div className="md:col-span-8 flex justify-end content-end ">
+    <img className="content-end"
       src="/images/mainsofa.png"
       alt="Rocket Single Seater Sofa"
-      style={{width:"1200px", height:"1220px"}}
+      style={{width:"860px", height:"850px"}}
     />
   </div>
 </div>
 {/* 2nd card
 {/*Item 1*/}
 <div style={{background:"#FAF4F4"}}>
-  <div className="grid grid-cols-1 md:grid-cols-2 font-poppins">
+  <div className="grid grid-cols-1 md:grid-cols-2 font-poppins p-5">
     {/* <!-- Side Table Item --> */}
-    <div className="col-span-1 text-left " >
-      <img src="/images/table1.png" className="items-center"alt="Side Table" style={{width:"800px", height:"570px"}}/>
-      <h1 className="text-2xl font-semibold " style={{fontSize:"36px"}}>Side Table</h1>
-      <button className=" font-light border-b-2 border-black 
-       hover:text-gray-500 hover:border-gray-500 mt-3" style={{fontSize:"24px"}}>View More</button>
+    <div className="col-span-1 m-3 p-3 text-center" >
+      <img src="/images/table1.png" className="items-center"alt="Side Table" style={{width:"590px", height:"340px"}}/>
+     <div>
+     <h1 className="text-3xl font-semibold text-center ">Side Table</h1>
+     <button className=" font-light text-2xl border-b-2 border-black 
+       hover:text-gray-500 hover:border-gray-500 mt-3" >View More</button>
+      </div> 
+     
     </div>
   {/*Item 2*/}
 {/* <!-- Side Table Item --> */}
-<div className="col-span-1 ">
-      <img src="/images/sofa2.png" alt="Cloud Sofa" style={{width:"800px", height:"540px"}}/>
-      <div className="p-3 text-center">
-      <h1 className="text-2xl font-semibold " style={{fontSize:"36px"}}>Side Table</h1>
-      <button className="font-light border-b-2 border-black mt-3 hover:text-gray-500
-       hover:border-gray-500" style={{fontSize:"24px"}}>View More</button>
-      </div>
+<div className="col-span-1  m-3 p-3">
+      <img src="/images/sofa2.png" alt="Cloud Sofa" style={{width:"590px", height:"340px"}}/>
+      <div className=" text-center">
+      <h1 className="text-3xl font-semibold text-center ">Side Table</h1>
+     <button className=" font-light text-2xl border-b-2 border-black 
+       hover:text-gray-500 hover:border-gray-500 mt-2" >View More</button>
+      </div> 
 
    </div> 
   
   </div>
 </div>
    {/*/3rd Card */}
-  <div className=" text-center font-semibold item-center justify-center py-10">
-      <h1 style={{fontSize:"45px", textIndent:"50"}}>
+  <div className=" text-center font-semibold item-center justify-center p-8 m-5">
+      <h1 className="text-4xl m-3">
       Top Picks For You
       </h1>
-      <h1 style={{color:"#9F9F9F", fontSize:"20px"}}>
+      <h1 className="text-lg m-3"style={{color:"#9F9F9F", }}>
       Find a bright ideal to suit your taste with our great selection of suspension, 
       floor and table lights.
       </h1>
     </div>
 
-<div className=" grid grid-cols-1 md:grid-cols-4 gap-6 font-black font-poppins">
+<div className="p-4 ">
   
     
-  {/* <!-- sofa 3 --> */}
-   <div className="flex flex-col items-center mt-12" >
-      <img src="/images/sofa3.png" alt="Side Table" style={{width:"400px", height:"400px"}}/>
-      <h1 className="text-2xl font-normal text-left" style={{fontSize:"24px"}}>
-        Trenton modular sofa_3
-      <br />Rs. 25,000.00
-        </h1>
-        
-    </div> 
-   {/* <!-- Table 2 --> */}
-    <div className="flex flex-col items-center mt-12" >
-      <img src="/images/table2.png" alt="Side Table" style={{width:"400px", height:"400px"}}/>
-      <h1 className="text-2xl font-normal text-left" style={{fontSize:"24px"}}>
-      Granite dining table with 
-      <br/>dining chair
-      <br />Rs. 25,000.00
-        </h1>
-        
-    </div>
-    {/* <!-- Table 3 --> */}
-   <div className="flex flex-col items-center mt-12" >
-      <img src="/images/table3.png" alt="Side Table" style={{width:"400px", height:"400px"}}/>
-      <h1 className="text-2xl font-normal text-cleft" style={{fontSize:"24px"}}>
-      Outdoor bar table and
-      <br/>stool
-      <br />Rs. 25,000.00
-        </h1>
-    </div> 
-
-{/* <!-- mirror --> */}
-<div className="flex flex-col items-center mt-12" >
-      <img src="/images/mirror.png" alt="Side Table" style={{width:"400px", height:"400px"}}/>
-      <h1 className="text-2xl font-normal left" style={{fontSize:"24px"}}>
-      Plain console with teak
-        <br/>mirror
-      <br />Rs. 25,000.00
-        </h1>
-    </div>
+<Furniture/>
 
   </div>
   <div className=" text-center items-center py-20">
@@ -130,38 +97,40 @@ export default function Home(){
   <div style={{background:"#FFF9E5"}} className="grid grid-cols-1 md:grid-cols-12 items-center 
   ">
   <div className="md:col-span-8 flex">
-    <img src="images/sofa4.png" alt="Asgaard Sofa" style={{width:"1200px", height:999}}/>
+    <img src="images/sofa4.png" alt="Asgaard Sofa" style={{width:"1000px", height:"999"}}/>
     </div>
     <div className="md:col-span-4 text-center p-3">
-    <h1 className=" font-poppins font-semibold" style={{fontSize:"30px"}}>
+    <h1 className=" font-poppins font-semibold text-2xl mb-2">
       New Arrivals</h1>
-      <h1 style={{fontSize:"60px"}} className="font-bold mb-9">Asgaard sofa
+      <h1  className="font-bold mb-9 text-5xl">Asgaard sofa
       </h1>
-      <a href="" className="font-semibold justify-center text-center hover:text-gray-500
-       hover:border-gray-500 border border-black p-2 px-6" style={{fontSize:"30px"}}>Order Now</a>
+      <div className="mt-4 p-4">
+        <a href="" className="font-semibold justify-center text-center  hover:text-gray-500
+       hover:border-gray-500 border border-black p-6 px-16 text-lg" >Order Now</a></div>
+      
     </div>
   </div>
 
 
 {/*5th Section */}
 <div>
-  <div className="text-center justify-start p-7 ">
-<h1 className="font-semibold " style={{fontSize:"46px"}}>
+  <div className="text-center justify-start p-8 m-8 ">
+<h1 className="font-semibold md:text-4xl mb-3" >
 Our Blogs
 </h1>
-<h1 style={{fontSize:"24px", color:"#9F9F9F"}}>Find a bright ideal to suit your taste with our great 
+<h1 className="text-lg" style={{ color:"#9F9F9F"}}>Find a bright ideal to suit your taste with our great 
   selection</h1>
 
    <div className="grid grid-cols-1 md:grid-cols-12 justify-center gap-4 mt-10 px-7 ">
 
 {/*blog1*/}
     <div className="md:col-span-4 text-center ">
-<img src="images/blog1.png" alt="" style={{width:"500px", height:"500px"}} className="p-4 "/>
-<h1 style={{fontSize:"28px"}} className="p-6">
+<img src="images/blog1.png" alt="" style={{width:"450px", height:"450px"}} className="p-4 "/>
+<h1  className="p-3 text-xl">
 Going all-in with millennial design
 </h1>
 <a href="" className="font-semibold justify-center text-center hover:text-gray-500
-       hover:border-gray-500 border-b border-black p-2 px-6" style={{fontSize:"30px"}}>Read More
+       hover:border-gray-500 border-b border-black p-2 text-2xl" >Read More
        </a>
    
 
@@ -182,14 +151,13 @@ Going all-in with millennial design
     </div>
 {/*Blog */}
 <div className="md:col-span-4 text-center ">
-<img src="images/blog2.png" alt="" style={{width:"500px", height:"500px"}} className="p-4"/>
-<h1 style={{fontSize:"28px"}} className="p-5">
+<img src="images/blog2.png" alt="" style={{width:"450px", height:"450px"}} className="p-4"/>
+<h1  className="p-3 text-xl">
 Going all-in with millennial design
 </h1>
 <a href="" className="font-semibold justify-center text-center hover:text-gray-500
-       hover:border-gray-500 border-b border-black p-2 px-6" style={{fontSize:"30px"}}>Read More
+       hover:border-gray-500 border-b border-black p-2 text-2xl" >Read More
        </a>
-   
 
 <div className="flex items-center justify-center p-7 space-x-6 text-lg">
   <span className="flex items-center space-x-2">
@@ -209,12 +177,12 @@ Going all-in with millennial design
 
 {/*Blog 3*/}
 <div className="md:col-span-4 text-center ">
-<img src="images/blog3.png" alt="" style={{width:"500px", height:"500px"}} className="p-4"/>
-<h1 style={{fontSize:"28px"}} className="p-5">
+<img src="images/blog3.png" alt="" style={{width:"450px", height:"450px"}} className="p-4"/>
+<h1  className="p-3 text-xl">
 Going all-in with millennial design
 </h1>
 <a href="" className="font-semibold justify-center text-center hover:text-gray-500
-       hover:border-gray-500 border-b border-black p-2 px-6" style={{fontSize:"30px"}}>Read More
+       hover:border-gray-500 border-b border-black p-2 text-2xl" >Read More
        </a>
    
 
@@ -239,16 +207,16 @@ Going all-in with millennial design
 
 </div>
 
-<div className=" text-center items-center py-20">
+<div className=" text-center items-center p-4 m-3 mb-4">
     <a href="" className="font-semibold justify-center text-center   hover:text-gray-500
-       hover:border-gray-500 border-b-2 p-6 border-black" style={{fontSize:"28px"}}>View All Post</a>
+       hover:border-gray-500 border-b-2 border-spacing-8  text-xl border-black" >View All Post</a>
     </div>
 {/*5th section */}
-<div className="flex flex-col items-center space-y-4 py-20
-bg-[url('/images/cover1.png')] bg-cover bg-center w-full" style={{height:"490px"}}>
-  <p className="text-center justify-center pt-20 font-extrabold md:text-8xl">Our Instagram</p>
-  <h1 className="text-center font-light md:text-3xl">Follow our store on Instagram</h1>
-  <button className="text-center font-medium md:text-2xl px-20 py-3 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300">
+<div className="flex flex-col items-center space-y-4 justify-center
+bg-[url('/images/cover1.png')] bg-cover bg-center w-full" style={{height:"390px"}}>
+  <p className="text-center justify-center pt-20 font-extrabold md:text-6xl">Our Instagram</p>
+  <h1 className="text-center font-light md:text-xl">Follow our store on Instagram</h1>
+  <button className="text-center font-medium md:text-xl px-20 py-3 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300">
   Follow Us
   </button>
 </div>

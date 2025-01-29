@@ -57,8 +57,8 @@
 //   }
 export default function Footer() {
     return (
-      <div className="font-Poppins m-11">
-        <footer className="grid grid-cols-1 md:grid-cols-12 gap-4 text-2xl items-start bg-white px-6 md:px-10 py-10">
+      <div className="font-Poppins m-4 p-2">
+        <footer className="grid grid-cols-1 md:grid-cols-12 gap-4 text-lg items-start bg-white px-6 md:px-10 py-10">
           {/* Address Section */}
           <div className="col-span-12 md:col-span-3 text-center md:text-left align-middle p-6 text-gray-500 text-medium">
             400 University Drive Suite 200 Coral <br />
@@ -108,7 +108,7 @@ export default function Footer() {
           
          
         </footer>
-        <div className=" text-center md:text-left  text-2xl">
+        <div className=" text-center md:text-left  text-lg">
           <div className="mb-10">
             <img  src="/images/line.png" className="w-full"alt="" style={{color:"#D9D9D9", border:"1px"}}/>
           </div>

@@ -21,7 +21,7 @@ const Furniture = () => {
         <div className=" grid grid-cols-1 md:grid-cols-4 m-6 justify-center gap-8">
             {product.map((product) => (
                     <div key={product._id}
-                        className="border  shadow-md p-2 hover:shadow transition h-40 duration-200" 
+                        className=" p-2 hover:shadow transition h-40 duration-200" 
                         style={{ height: "400px" }}>
 
                         {product.image && (
